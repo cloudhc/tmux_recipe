@@ -1,9 +1,17 @@
 # tmux_recipe
 
+## install tmux
+```{r, engine='bash', count_lines}
+sudo apt-get install -y tmux
+```
+
 ## deploy
 ```{r, engine='bash', count_lines}
+git clone https://github.com/cloudhc/tmux_recipe.git
 cd tmux_recipe
 ./deploy.sh
+cd ..
+tmux source-file .tmux.conf
 ```
 
 # tmux plugin user's guide
